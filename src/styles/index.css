@@ -27,10 +27,10 @@
 }
 
 @keyframes blur-efect {
-  0% {
+  from {
     filter: blur(10px);
   }
-  100% {
+  to {
     filter: blur(0px);
   }
 }
