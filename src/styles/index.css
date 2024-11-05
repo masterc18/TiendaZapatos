@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
 
 :root {
-  --bg-color: rgb(14, 156, 207);
+  --bg-color: rgb(39, 189, 200);
   --primary-color: rgb(255, 252, 252);
   --nav-font: "Birthstone", cursive;
 }
@@ -87,7 +87,7 @@ nav ul {
 nav li {
   display: flex;
   margin-right: 30px;
-  text-shadow: blue 2px 1px 2px;
+  text-shadow: var(--bg-color) 2px 1px 2px;
 }
 
 nav a {
@@ -101,9 +101,21 @@ nav a {
 nav a:hover {
   text-decoration: underline wavy #fff;
 }
+/*Poner imagen de fondo en las letras*/
+.mainTitle {
+  text-align: center;
+  color: #fff;
+  font-size: 15rem;
+  background-image: url("https://img.freepik.com/vector-premium/ilustracion-arte_610601-1851.jpg?semt=ais_hybrid");
+  background-clip: text;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgb(39, 189, 200);
+}
 main {
   width: 100%;
   flex: 1;
+  margin-top: 25px;
 }
 
 .presentation {
@@ -228,6 +240,7 @@ button:hover {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: #fff;
+  cursor: pointer;
 }
 
 button:hover::before {
@@ -237,7 +250,7 @@ button:hover::before {
 }
 
 button::before {
-  content: '';
+  content: "";
   display: block;
   width: 0px;
   height: 86%;
@@ -261,7 +274,6 @@ button:active {
   transition: box-shadow 0.2s ease-in;
 }
 
-
 .card p {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #fff;
@@ -280,6 +292,9 @@ button:active {
 
   nav li {
     margin: 6px;
+  }
+  .mainTitle {
+    font-size: 5rem;
   }
   .presentation {
     flex-direction: column;
