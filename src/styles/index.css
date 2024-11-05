@@ -106,11 +106,12 @@ nav a {
 nav a:hover {
   text-decoration: underline wavy #fff;
 }
-/*Poner imagen de fondo en las letras*/
+
 .mainTitle {
   text-align: center;
   color: #fff;
   font-size: 15rem;
+  /*Poner imagen de fondo en las letras*/
   background-image: url("https://img.freepik.com/vector-premium/ilustracion-arte_610601-1851.jpg?semt=ais_hybrid");
   background-clip: text;
   background-position: center;
